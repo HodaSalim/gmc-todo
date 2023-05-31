@@ -75,6 +75,6 @@ app.delete("/todos/:id", (req, res) => {
     .then((todos) => res.status(200).json(todos));
 });
 
-app.listen(process.env.EXPRESS_PORT, () =>
+app.listen(config.EXPRESS_PORT, () =>
   console.log("express connection successful")
 );
